@@ -1,0 +1,69 @@
+body {
+    background-image: url(16687975_5785994.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .video-container1 {
+    margin-bottom: 20px;
+  }
+  
+  .video-container1 video {
+    max-width: 100%;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #FFF;
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 100px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 5px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #373737;
+  }
+  h2{
+    color: #000000;
+    background-color: #FFF;
+    border-radius: 30px;
+    box-shadow: 0 5px 50px rgb(189, 0, 0);
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: none; /* Adjust the opacity (0.5) as needed */
+  }

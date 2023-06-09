@@ -1,0 +1,187 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('16687975_5785994.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border-radius: 12px;
+  padding: 0 25px;
+  box-shadow: 0 5px 50px rgb(0, 0, 0);
+  position: absolute;
+  top: 20px;
+  width: 55%;
+}
+
+.nav-content {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+.nav-list {
+  margin-right: 15px;
+}
+
+.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60px;
+  width: 80px;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active {
+  transform: translateY(-10px);
+}
+
+.link-icon {
+  font-size: 24px;
+  color: #999;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active .link-icon {
+  color: #000000;
+}
+
+.link-text {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(32px);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active .link-text {
+  opacity: 1;
+}
+
+.indicator {
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  height: 4px;
+  width: 0;
+  background-color: #000000;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-list:hover .indicator,
+.active .indicator {
+  width: 80px;
+}
+
+h1,
+label {
+  color: #FFF;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #FFF;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  color: #FFF;
+  text-align: center;
+}
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('16687975_5785994.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative; /* Add this line */
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
+  z-index: 0; /* Add this line */
+}
+
+/* Rest of the CSS code remains the same */

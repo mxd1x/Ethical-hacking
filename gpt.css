@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-image: url('16687975_5785994.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 12px;
+    padding: 0 25px;
+    box-shadow: 0 5px 50px rgb(0, 0, 0);
+    position: absolute;
+    top: 20px;
+    width: 55%;
+  }
+  
+  .nav-content {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    position: relative;
+  }
+  
+  .nav-list {
+    margin-right: 15px;
+  }
+  
+  .link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    width: 80px;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .link-item.active {
+    transform: translateY(-10px);
+  }
+  
+  .link-icon {
+    font-size: 24px;
+    color: #999;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .link-item.active .link-icon {
+    color: #000000;
+  }
+  
+  .link-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .link-item.active .link-text {
+    opacity: 1;
+  }
+  
+  .indicator {
+    position: absolute;
+    top: -14px;
+    left: 40px;
+    height: 4px;
+    width: 0;
+    background-color: #000000;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .nav-list:hover .indicator,
+  .active .indicator {
+    width: 80px;
+  }
+  
+  h1,
+  p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color:transparent;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 5px 50px rgb(189, 0, 0);
+    padding: 20px;
+  }
+  
+  .text-container {
+    border-radius: 50px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+    box-shadow: 0 5px 50px rgb(255, 0, 0);
+  }body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
+  }
+  
+  p {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 700px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 900px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav-content">
+      <li class="nav-list">
+        <a href="gpt.html" class="link-item">
+          <i class='bx bxs-home link-icon'></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a href="content.html" class="link-item">
+          <i class='bx bxs-caret-right-square link-icon'></i>
+          <span class="link-text">Content</span>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a href="comment.html" class="link-item">
+         <i class='bx bxs-message-rounded link-icon'></i>
+          <span class="link-text">Comments</span>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a href="profile.html" class="link-item active">
+          <i class='bx bxs-user link-icon'></i>
+          <span class="link-text">Profile</span>
+        </a>
+      </li>
+      <span class="indicator"></span>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>About Me</h1>
+    <!-- Your profile content goes here -->
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Split Hovers</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <main id="main">
+    <div class="card" tabindex="0">
+      <img src="IMG_20230609_120500.jpg">
+      <div class="text">
+        <h2 data-splitting="">About Me</h2>
+        <p data-splitting="">Cyber Security Researcher<br>
+                             Web Developer<br>
+                             Place :India, Kerala, TVM<br> 
+                             Name : Dave <br>
+                             Occupation : NON<br>
+                             Gender : Male</p>
+                             
+      </div>
+    </div>
+  </main>
+
+  <script src=""></script>
+  <script>
+    const card = document.querySelector(".card");
+    const text = card.querySelector(".text");
+
+    // Initialize Splitting.js
+    Splitting({ target: text });
+
+    // Add event listener for touchstart event
+    card.addEventListener("touchstart", function() {
+      text.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
+
+
